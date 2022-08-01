@@ -1,0 +1,40 @@
+@font-face{
+	font-family:'28 Days Later';
+	src:url(asset/font/28 Days Later.ttf);
+}
+@font-face{
+	font-family:'A Charming Font Outline';
+	src:url(asset/font/Achafexp.ttf);
+}
+@font-face{
+	font-family:'Viner Hand ITC Regular';
+	src:url(asset/font/VINERITC.TTF);
+}
+@font-face{
+	font-family:'Gabriola Regular';
+	src:url(asset/font/Gabriola.ttf);
+}
+@font-face{
+	font-family:'Poppins', sans-serif;
+	src:url(asset/font/Poppins.ttf);
+}
+@font-face{
+	font-family:'Poppins Extralight';
+	src:url(asset/font/Poppins-Extralight.ttf);
+}
+@font-face{
+	font-family:'Phantom Fingers';
+	src:url(asset/font/PhantomFingers.ttf);
+}
+@font-face{
+	font-family:'Glitch';
+	src:url(asset/font/glitch.ttf);
+}
+@font-face{
+	font-family:'Wolfmoon';
+	src:url(asset/font/Wolfmoon.ttf);
+}
+@font-face{
+	font-family:'Werewolfmoon';
+	src:url(asset/font/Werewolfmoon.ttf);
+}

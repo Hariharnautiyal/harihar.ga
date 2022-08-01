@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    
+    <title>Harihar Creations</title>
+	   <link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="font.css">
+	<link rel="stylesheet" href="css/type.css">
+<meta name="viewport" content="width=device-width, initial-scale=0.7 user-scaleble=0">
+
+	<link rel="stylesheet" href="css/nav.css"><link rel="stylesheet" href="css\icon\css\all.css">
+		<link rel="icon" type="image/x-icon" href="icon.png">
+<link rel="shortcuticon" type="image/x-icon" href="icon.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../dest/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/script.js"> </script>
+   
+</head>
+<body onload="myFunction()">
+    <div id="loading">
+
+
+<div class="loader">
+  <div class="inner one"></div>
+  <div class="inner two"></div>
+  <div class="inner three"></div>
+</div>
+  </div>
+ <audio id="myAudio">
+  <source src="" type="audio/ogg">
+  <source src="bg.mp3" type="audio/mpeg">
+</audio>
+<div class="jar">
+<center><p class="type" style="color:red;">How would you like to enter website?</p></center>
+
+  <div class="box">
+  <TABLE>
+  <TR>
+  <TH>   <a href="#divOne" class="download-btn" onclick="playAudio()" >As a Friend..</a>
+            <div class="countdown"></div>
+            <div class="pleaseWait-text"></div>
+			</TH>
+  <TH>  <a href="#divOne" class="download-btn2" onclick="playAudio()">As a Visiter..</a>
+            <div class="countdown2"></div>
+            <div class="pleaseWait-text2"></div>
+			</TH>
+  </TR>
+  </TABLE>
+  
+		 
+	 	   
+	 	
+		
+		
+</div>
+	<div class="overlay" id="divOne">
+	
+	</div>
+   
+		
+	
+	<div class="overlay" id="divOne">
+		
+	</div>
+
+</div>
+
+<script src="load.js"></script>
+ <script type="text/javascript" src="js/count.js"></script>
+ <script>
+ const downloadBtn2 = document.querySelector(".download-btn2");
+  const countdown2 = document.querySelector(".countdown2");
+  const pleaseWaitText2 = document.querySelector(".pleaseWait-text2");
+  const manualDownloadText2 = document.querySelector(".manualDownload-text2");
+  const manualDownloadLink2 = document.querySelector(".manualDownload-link2");
+  var timeLeft2 = 5;
+
+  downloadBtn2.addEventListener("click", () => {
+    downloadBtn2.style.display = "none";
+    countdown2.innerHTML = " <span>" + timeLeft2 + "</span> seconds."  //for quick start of countdown
+
+    var downloadTimer2 = setInterval(function timeCount2() {
+      timeLeft2 -= 1;
+      countdown2.innerHTML = " <span>" + timeLeft2 + "</span> seconds.";
+
+      if(timeLeft2 <= 0){
+        clearInterval(downloadTimer2);
+        pleaseWaitText2.style.display = "block";
+        let download_href = "home.html"; //enter the downlodable file link here
+        window.location.href = download_href;
+        manualDownloadLink2.href = download_href;
+        setTimeout(() => {
+          pleaseWaitText2.style.display = "none";
+        manualDownloadText2.style.display = "block"
+        }, 4000);
+      }
+    }, 1000);
+  });
+  function btn2() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+  }
+ </script>
+</body>
+</html>
